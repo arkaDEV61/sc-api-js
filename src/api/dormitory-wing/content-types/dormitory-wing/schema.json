@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dormitory_wings",
+  "info": {
+    "singularName": "dormitory-wing",
+    "pluralName": "dormitory-wings",
+    "displayName": "DormitoryWing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "floors": {
+      "type": "integer"
+    },
+    "mark": {
+      "type": "string"
+    },
+    "total_rooms": {
+      "type": "integer"
+    },
+    "rooms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::room.room",
+      "mappedBy": "dormitory_wing"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "room_checkouts",
+  "info": {
+    "singularName": "room-checkout",
+    "pluralName": "room-checkouts",
+    "displayName": "RoomCheckout",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date_start": {
+      "type": "date"
+    },
+    "date_end": {
+      "type": "date"
+    },
+    "days": {
+      "type": "integer"
+    },
+    "room": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::room.room",
+      "inversedBy": "room_checkouts"
+    },
+    "academic_year": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year",
+      "inversedBy": "room_checkouts"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "room_checkouts"
+    }
+  }
+}
