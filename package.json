@@ -2,22 +2,22 @@
   "name": "sc-api-js",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Studentski centar api",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.10.5",
-    "@strapi/plugin-users-permissions": "4.10.5",
-    "@strapi/plugin-i18n": "4.10.5",
+    "@strapi/plugin-i18n": "4.10.7",
+    "@strapi/plugin-users-permissions": "4.10.7",
+    "@strapi/provider-email-nodemailer": "^4.10.7",
+    "@strapi/strapi": "4.10.7",
     "pg": "8.8.0"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "ark@DEV"
   },
   "strapi": {
     "uuid": "acff42eb-cd08-43ff-b823-2336e5465713"
