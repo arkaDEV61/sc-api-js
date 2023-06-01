@@ -29,9 +29,9 @@
     },
     "meals": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::meal.meal",
-      "mappedBy": "meal_menu"
+      "mappedBy": "meal_menus"
     }
   }
 }
