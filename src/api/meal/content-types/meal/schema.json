@@ -4,7 +4,8 @@
   "info": {
     "singularName": "meal",
     "pluralName": "meals",
-    "displayName": "Meal"
+    "displayName": "Meal",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,9 +24,9 @@
       "target": "api::meal-type.meal-type",
       "inversedBy": "meals"
     },
-    "meal_menu": {
+    "meal_menus": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::meal-menu.meal-menu",
       "inversedBy": "meals"
     }
