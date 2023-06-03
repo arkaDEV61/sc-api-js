@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "activation_requests",
+  "info": {
+    "singularName": "activation-request",
+    "pluralName": "activation-requests",
+    "displayName": "ActivationRequest"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "reactivate": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
