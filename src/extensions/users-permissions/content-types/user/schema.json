@@ -112,6 +112,12 @@
       "relation": "manyToOne",
       "target": "api::academic-year.academic-year",
       "inversedBy": "students"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::student.student",
+      "mappedBy": "student_data"
     }
   }
 }
