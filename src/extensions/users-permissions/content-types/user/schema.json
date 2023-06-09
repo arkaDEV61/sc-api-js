@@ -118,6 +118,10 @@
       "relation": "oneToOne",
       "target": "api::student.student",
       "mappedBy": "student_data"
+    },
+    "user_active": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
