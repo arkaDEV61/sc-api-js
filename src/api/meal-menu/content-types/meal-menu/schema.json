@@ -21,17 +21,23 @@
       "target": "api::meal-type.meal-type",
       "inversedBy": "meal_menus"
     },
-    "meal_menu_day": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::meal-menu-day.meal-menu-day",
-      "mappedBy": "meal_menu_lunch"
-    },
     "meals": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::meal.meal",
       "mappedBy": "meal_menus"
+    },
+    "meal_menu_day_breakfast": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::meal-menu-day.meal-menu-day",
+      "mappedBy": "meal_menu_breakfast"
+    },
+    "meal_menu_day_lunch": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::meal-menu-day.meal-menu-day",
+      "mappedBy": "meal_menu_lunch"
     }
   }
 }

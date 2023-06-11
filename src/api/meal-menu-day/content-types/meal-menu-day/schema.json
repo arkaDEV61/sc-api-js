@@ -22,13 +22,13 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::meal-menu.meal-menu",
-      "inversedBy": "meal_menu_day"
+      "inversedBy": "meal_menu_day_breakfast"
     },
     "meal_menu_lunch": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::meal-menu.meal-menu",
-      "inversedBy": "meal_menu_day"
+      "inversedBy": "meal_menu_day_lunch"
     }
   }
 }
