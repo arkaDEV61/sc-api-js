@@ -18,7 +18,7 @@
     "weekday": {
       "type": "integer"
     },
-    "meal_menu_day_breakfast": {
+    "meal_menu_breakfast": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::meal-menu.meal-menu",
