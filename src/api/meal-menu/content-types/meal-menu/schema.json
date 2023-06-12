@@ -31,7 +31,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::meal-menu-day.meal-menu-day",
-      "mappedBy": "meal_menu_breakfast"
+      "mappedBy": "meal_menu_day_breakfast"
     },
     "meal_menu_day_lunches": {
       "type": "relation",
