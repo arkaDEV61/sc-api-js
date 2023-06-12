@@ -20,15 +20,15 @@
     },
     "meal_menu_breakfast": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::meal-menu.meal-menu",
-      "inversedBy": "meal_menu_day_breakfast"
+      "inversedBy": "meal_menu_day_breakfasts"
     },
     "meal_menu_lunch": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::meal-menu.meal-menu",
-      "inversedBy": "meal_menu_day_lunch"
+      "inversedBy": "meal_menu_day_lunches"
     }
   }
 }
