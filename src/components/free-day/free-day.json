@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_free_day_free_days",
+  "info": {
+    "displayName": "FreeDay"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}
