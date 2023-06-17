@@ -40,10 +40,9 @@
       "mappedBy": "academic_year"
     },
     "free_days": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::free-day.free-day",
-      "mappedBy": "academic_year"
+      "type": "component",
+      "repeatable": true,
+      "component": "free-day.free-day"
     }
   }
 }
