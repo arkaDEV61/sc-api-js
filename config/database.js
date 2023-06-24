@@ -1,5 +1,6 @@
 const path = require('path');
 
+//TODO ovo je za localhost
 /*module.exports = ({ env }) => {
   return {
     connection: {
@@ -27,7 +28,9 @@ const path = require('path');
           user: env('DATABASE_USERNAME', 'postgres'),
           password: env('DATABASE_PASSWORD', '0000'),
           schema: env('DATABASE_SCHEMA', 'public'), // Not required
-          ssl: env.bool('DATABASE_SSL', false),
+          ssl: {
+            rejectUnauthorized: env.bool('DATABASE_SSL', false),
+          },
         },
         debug: false,
       },
