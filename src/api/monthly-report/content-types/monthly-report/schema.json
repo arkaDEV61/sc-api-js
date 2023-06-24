@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "monthly_reports",
+  "info": {
+    "singularName": "monthly-report",
+    "pluralName": "monthly-reports",
+    "displayName": "MonthlyReport"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "month": {
+      "type": "integer"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "students": {
+      "type": "integer"
+    },
+    "room_checkouts": {
+      "type": "integer"
+    },
+    "breakfast_checkouts": {
+      "type": "integer"
+    },
+    "lunch_checkouts": {
+      "type": "integer"
+    },
+    "meal_checkouts": {
+      "type": "integer"
+    },
+    "academic_year": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::academic-year.academic-year",
+      "inversedBy": "monthly_reports"
+    }
+  }
+}

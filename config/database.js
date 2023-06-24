@@ -1,7 +1,6 @@
 const path = require('path');
 
-module.exports = ({ env }) => {
-  return {
+module.exports = ({ env }) => ({
     connection: {
       client: 'postgres',
       connection: {
@@ -10,11 +9,8 @@ module.exports = ({ env }) => {
         database: env('DATABASE_NAME', 'db'),
         user: env('DATABASE_USERNAME', 'postgres'),
         password: env('DATABASE_PASSWORD', '1234'),
-        ssl: {
-          rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false),
-        },
+        ssl:  env.bool('DATABASE_SSL_SELF', false),
       },
       debug: false,
     },
-  };
-};
+});
