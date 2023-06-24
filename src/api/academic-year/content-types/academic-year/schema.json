@@ -43,6 +43,12 @@
       "type": "component",
       "repeatable": true,
       "component": "free-day.free-day"
+    },
+    "monthly_reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::monthly-report.monthly-report",
+      "mappedBy": "academic_year"
     }
   }
 }
