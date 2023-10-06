@@ -1,7 +1,7 @@
 const path = require('path');
 
-//TODO ovo je za localhost
-/*module.exports = ({ env }) => {
+//TODO ovo je za localhost pgAdmin
+/* module.exports = ({ env }) => {
   return {
     connection: {
       client: 'postgres',
@@ -11,12 +11,12 @@ const path = require('path');
         database: env('DATABASE_NAME', 'db'),
         user: env('DATABASE_USERNAME', 'postgres'),
         password: env('DATABASE_PASSWORD', '1234'),
-        ssl: env('DATABASE_SSL', false)
+        ssl: false //env('DATABASE_SSL', false)
       },
       debug: false,
     },
   };
-};*/
+}; */
 
  module.exports = ({ env }) => ({
       connection: {

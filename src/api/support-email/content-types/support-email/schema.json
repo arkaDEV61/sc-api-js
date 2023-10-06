@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "support_emails",
+  "info": {
+    "singularName": "support-email",
+    "pluralName": "support-emails",
+    "displayName": "Support Email"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "dynamiczone",
+      "components": [
+        "email.email"
+      ]
+    }
+  }
+}
